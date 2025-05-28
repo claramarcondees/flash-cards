@@ -1,5 +1,11 @@
+:root {
+    --text-color: #ffffff;
+    --card-front-color: rgb(233, 171, 211);
+    --card-back-color: rgb(254, 248, 252);
+}
+
 body {
-    background-color: rgb(228, 143, 190);
+    background: url('img/fundo.jpg');
     font-family: Bai Jamjuree;
 }
 
@@ -19,11 +25,13 @@ body {
 .cartao__conteudo {
     text-align: center;
     height: 100%;
+    background-color: var(--card-front-color);
 }
 
 
 .cartao__conteudo h3 {
-    background-color: rgb(255, 255, 255);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -32,9 +40,9 @@ body {
     font-size: 1vw;
 }
 
-.cartao__conteudo p {
-    margin-top: 1rem;
-    padding: 2rem;
+.cartao__conteudo__resposta p{
+    color: var(--card-back-color);
+    font-weight: 700;
 }
 
 footer {
